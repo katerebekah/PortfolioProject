@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"font-",
+				"font-size"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"tet",
+				"text-align"
+			],
+			[
+				"curr",
+				"currentWeather"
+			],
+			[
+				"body",
+				"bodyClass"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
 				"background",
 				"background-image"
 			],
@@ -32,10 +60,6 @@
 				"background-position"
 			],
 			[
-				"font",
-				"font-family"
-			],
-			[
 				"background-c",
 				"background-color"
 			],
@@ -51,6 +75,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 5002,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "portfolio.css",
+			"settings":
+			{
+				"buffer_size": 5629,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "portfolio.js",
+			"settings":
+			{
+				"buffer_size": 4797,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -92,14 +140,15 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Kate/Documents/Documents/KatePortfolio"
+		"/C/Users/Kate/NSSProjects/PortfolioProject"
 	],
 	"file_history":
 	[
+		"/C/Users/Kate/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/C/Users/Kate/NSSProjects/Form/form.html",
 		"/C/Users/Kate/Documents/Documents/KatePortfolio/index.html",
 		"/C/Users/Kate/Documents/Documents/KatePortfolio/portfolio.css",
 		"/C/Users/Kate/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Kate/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
 		"/C/Users/Kate/AppData/Roaming/Sublime Text 3/Packages/JSHint Gutter/.jshintrc",
 		"/C/Users/Kate/Documents/Documents/KatePortfolio/script.js",
 		"/C/Users/Kate/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
@@ -108,7 +157,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 80.0
 	},
 	"find_in_files":
 	{
@@ -139,8 +188,98 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5002,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3034,
+								3034
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2117.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "portfolio.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5629,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4654,
+								4654
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 9885.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "portfolio.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4797,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3958,
+								3958
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1914.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],

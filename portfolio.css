@@ -1,185 +1,277 @@
 @import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
 @import url(http://fonts.googleapis.com/css?family=Amatic+SC);
-/*hex#021D24, rgb 2, 29, 36 - dark blue
+/* FYI color list: hex#021D24, rgb 2, 29, 36 - dark blue
 hex#002400 rgb 0, 36, 0 - dark green
 hex#fbffff, rgb 251,255,255 white-ish */
 
 body {
-   margin: 0;
-   color: #fbffff;
-   background-color: #021D24;
-   background: url("Trees.svg") fixed no-repeat center bottom;
-   background-size: cover;
-   font-family: "Shadows Into Light", sans-serif;
+    margin: 0;
+    color: #fbffff;
+    background-color: #021D24;
+    background: url("TreesDefaultCloudy.svg") fixed no-repeat center bottom;
+    background-size: cover;
+    font-family: "Shadows Into Light", sans-serif;
 }
 
-/* This is the background classes that change with the API */
-.sunny {background-color: #021D24;
-   background: url("TreesSunny.svg") fixed no-repeat center bottom;
-   background-size: cover;
-   }
-.rainy {background-color: #021D24;
-   background: url("TreesRainy.svg") fixed no-repeat center bottom;
-   background-size: cover;
-   }
-.stormy {background-color: #021D24;
-   background: url("TreesStorm.svg") fixed no-repeat center bottom;
-   background-size: cover;
-   }
-.snow {background-color: #021D24;
-   background: url("TreesSnow.svg") fixed no-repeat center bottom;
-   background-size: cover;
-   }
-.fog {background-color: #021D24;
-   background: url("TreesFog.svg") fixed no-repeat center bottom;
-   background-size: cover;
-   }
-.sunny2 {background-color: #021D24;
-   background: url("TreesSunny2.svg") fixed no-repeat center bottom;
-   background-size: cover;
-   }
+/* This is the background classes that change the background with the API */
+
+.sunny {
+    background-color: #021D24;
+    background: url("TreesSunny.svg") fixed no-repeat center bottom;
+    background-size: cover;
+}
+.rainy {
+    background-color: #021D24;
+    background: url("TreesRainy.svg") fixed no-repeat center bottom;
+    background-size: cover;
+}
+.stormy {
+    background-color: #021D24;
+    background: url("TreesStorm.svg") fixed no-repeat center bottom;
+    background-size: cover;
+}
+.snow {
+    background-color: #021D24;
+    background: url("TreesSnow.svg") fixed no-repeat center bottom;
+    background-size: cover;
+}
+.fog {
+    background-color: #021D24;
+    background: url("TreesFog.svg") fixed no-repeat center bottom;
+    background-size: cover;
+}
+.sunny2 {
+    background-color: #021D24;
+    background: url("TreesSunny2.svg") fixed no-repeat center bottom;
+    background-size: cover;
+}
 
 /* Header bar text */
+
 header {
-   background-image: linear-gradient(rgba(0, 36, 0, 1), rgba(0, 36, 0, 0));
-   color: #fbffff;
-   font-family: "Amatic SC", "Shadows Into Light", sans-serif;
-   padding-bottom: 20px;
+    background-image: linear-gradient(rgba(0, 36, 0, 1), rgba(0, 36, 0, 0));
+    color: #fbffff;
+    font-family: "Amatic SC", "Shadows Into Light", sans-serif;
+    padding-bottom: 20px;
 }
 header h1 {
-   display: inline-block;
-   padding: 0 3% 0 1%;
-   font-size: 60px;
-   margin: 0;
+    display: inline-block;
+    padding: 0 3% 0 1%;
+    font-size: 60px;
+    margin: 0;
 }
 header h2 {
-   font-family: "Shadows Into Light", sans-serif;
-   color: #fbffff;
-   font-size: 30px;
-   margin: 0;
-   padding: 0 1%;
-   text-align: center;
+    font-family: "Shadows Into Light", sans-serif;
+    color: #fbffff;
+    font-size: 30px;
+    margin: 0;
+    padding: 0 1%;
+    text-align: center;
 }
 h1 + h2 {
-   display: inline-block;
-   margin-bottom: 0;
+    display: inline-block;
+    margin-bottom: 0;
 }
-/*home navigation buttons*/
+
+/*home navigation buttons, including active style*/
+
 #home {
-   margin: 10% auto 0;
-   padding: 0 2.5%;
-   color: #fbffff;
-   text-align: center;
+    margin: 0 auto;
+    padding: 2.5%;
+    color: #fbffff;
+    text-align: center;
+}
+#home ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 #home li {
-   font-family: "Amatic SC", "Shadows Into Light", sans-serif;
-   display: inline-block;
-   list-style: none;
-   font-size: 30px;
-   padding: 0 15px;
-   margin: 12px;
-   border: solid #fbffff 2px;
-   border-radius: 8px;
+    font-family: "Amatic SC", "Shadows Into Light", Helvetica, "Calibri", sans-serif;
+    display: inline-block;
+    list-style: none;
+    font-size: 30px;
+    padding: 0 15px;
+    margin: 12px;
+    border: solid #fbffff 2px;
+    border-radius: 8px;
 }
 #home li:hover {
-   background-color: #fbffff;
-   color: #021D24;
-   border: solid #021D24 2px;
+    background-color: #fbffff;
+    color: #021D24;
+    border: solid #021D24 2px;
 }
-#selected {
-   background-color: #fbffff;
-   color: #021D24;
-   border: solid #021D24 2px;
+.active {
+    background-color: #fbffff;
+    color: #021D24;
+    border: solid #021D24 2px;
 }
-/*designer and developer IDs use the same class of portfolio*/
-#designer {
-   margin-top: 10%;
-   text-align: center;
-   display: none;
+
+/* This is the CSS for the sections that correlate with the #home buttons */
+
+/*designer and developer sections use the same class of portfolio*/
+
+.desSection {
+    text-align: center;
+    display: none;
 }
-#developer {
-   margin-top: 10%;
-   text-align: center;
-   display: none;
+.devSection {
+    text-align: center;
+    display: none;
 }
 .portfolio {
-   width: 20%;
-   max-width: 250px;
-   padding: 2.5%;
-   display: inline-block;
+    width: 20%;
+    max-width: 250px;
+    min-width: 100px;
+    padding: 2.5%;
+    display: inline-block;
+    vertical-align: top;
 }
 .portfolio img {
-   width: 100%;
+    width: 100%;
 }
 .portfolio p {
-   font-family: "Amatic SC", "Shadows Into Light", sans-serif;
-   font-size: 24px;
-   padding: 0;
-   margin: 0;
+    font-family: "Amatic SC", "Shadows Into Light", sans-serif;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
 }
-/*ContactID has image and text*/
-#contact {
-   padding: 25px;
-   text-align: center;
-   margin: 10% 0 15px;
-   height: 25%;
-   background-color: rgba(255, 255, 255, .3);
-   display: none;
-}
-/*Archivist ID has 2 halfboxes*/
-#archivist {
-   margin: 10% 0 0 0;
-   text-align: center;
-   display: none;
+
+/*Archivist ID has 2 halfboxes - one halfbox uses the class of portfolio from above*/
+
+.arcSection {
+    margin: 0;
+    text-align: center;
+    display: none;
 }
 .halfBox {
-   width: 40%;
-   display: inline-block;
-   padding: 10px;
-   overflow: hidden;
-   background-color: #fbffff;
-   color: #021D24;
-   border: solid #021D24 2px;
-   border-radius: 8px;
-   box-size: border-box;
-   margin: 0 2%;
-   vertical-align: top;
-}
-#contact h2 {
-   text-align: center;
-   font-size: 28px;
-   margin: 0;
-   padding: 10px 0 0 0;
-   color: #021D24;
-}
-#contact img {
-   padding: 0;
-   max-width: 200px;
-   width: 50%;
-   margin: 0;
-   border: solid #021D24 2px;
-   border-radius: 8px;
+    width: 40%;
+    display: inline-block;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #fbffff;
+    color: #021D24;
+    border: solid #021D24 2px;
+    border-radius: 8px;
+    margin: 0 2%;
+    vertical-align: top;
 }
 
+/*ContactID has image and text and form*/
+
+.conSection {
+    padding: 0;
+    margin: 0 0 15px;
+    height: 25%;
+    display: none;
+    text-align: center;
+}
+#contact h3 {
+    text-align: center;
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
+    color: #fbffff;
+    display: inline-block;
+}
+form {
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 20px;
+    width: 75%;
+}
+fieldset {
+    background-color: rgba(2, 29, 36, .3);
+    margin: 10px;
+}
+legend {
+    font-size: 30px;
+}
+.label {
+    margin-bottom: 25px;
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+.input {
+    display: inline-block;
+    width: 65%;
+    line-height: 24px;
+}
+option, select {
+    margin-top: 20px;
+    height: 40px;
+    font-size: 16px;
+    font-family: "Shadows Into Light", sans-serif;
+}
+button {
+    margin-top: 10px;
+    width: 75%;
+    height: 40px;
+    font-size: 24px;
+    font-family: "Shadows Into Light", sans-serif;
+}
+
+/* This class changes makes the sections appear on click*/
+
+.visible {
+    display: block;
+}
+
+/*This is the css for the footer with the weather information*/
 
 footer {
-   position:fixed;
-   bottom:0;
-   right:0;
-   font-size: 12px;
-   background-color:rgba(0, 36, 0, .5);
-   text-align: right;
-   padding:0 0 2px 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    background-color: rgba(0, 36, 0, .5);
+    text-align: right;
+    padding: 0;
 }
 footer img {
-   padding:5px 5px 0 5px;
-
+    height: 20px;
 }
 
-@media screen and (max-width: 500px){
-   footer {
-      position: static;
-      margin-top:150px;
-   }
+/*Media Queries for basic responsive design*/
 
+@media screen and (max-width: 750px) {
+    header h2 {
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .portfolio {
+        width: 95%;
+        margin: 10% auto;
+    }
+    .halfBox {
+        width: 90%;
+        margin: 10% auto;
+        padding: 5px;
+    }
+    form {
+        font-size: 14px;
+        width: 90%;
+    }
+    legend {
+        font-size: 20px;
+    }
+    header h1 {
+        font-size: 48px;
+    }
+    header h2 {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 400px) {
+    header h2 {
+        font-size: 18px;
+    }
+    footer {
+        font-size: 10px;
+    }
+    footer img {
+        height: 25px;
+    }
 }
