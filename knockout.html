@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Knockout and Materialize CSS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
+</head>
+
+<body>
+  <nav class="teal darken-4">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">Kate Rebekah</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Account Ledger</a></li>
+        <li><a href="index.html">Back to Portfolio</a></li>
+        <li><a href="http://knockoutjs.com/">Knockout JS</a></li>
+        <li><a href="http://materializecss.com/">Materialize CSS</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <h4>Account Ledger</h4>
+    <form>
+      <div class="row">
+        <ul data-bind="foreach: entries" class="col s8">
+          <div class="input-field col s6">
+            <li>
+              <input id="description" type="text" data-bind="value: description">
+              <label for="description">Description</label>
+            </li>
+          </div>
+          <div class="input-field col s6">
+            <li>
+              <input id="price" type="text" data-bind="value: price">
+              <label for="price">Credit/Debit</label>
+              <a data-bind="click: $root.removeEntry.bind($root)" class="waves-effect waves-light btn">Remove</a>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <a data-bind="click: addEntry" class="waves-effect waves-light btn-large">Add New Item</a>
+    </form>
+    <h3>Total: <span data-bind="text: totalPrice()"></span></h3>
+  </div>
+  <footer class="page-footer teal darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Knockout JS Data Binding</h5>
+          <p class="grey-text text-lighten-4">Using KnockoutJS and MaterializeCSS to make a simple form.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">References</h5>
+          <ul class="white-text">
+            <li><a href="http://knockoutjs.com/" class="white-text">Knockout JS</a></li>
+            <li><a href="http://materializecss.com/" class="white-text">Materialize CSS</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright teal darken-4">
+      <div class="container">
+        © 2014 Copyright Text
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script src="/js/knockoutPractice.js"></script>
+</body>
+
+</html>
