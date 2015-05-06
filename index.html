@@ -2,117 +2,123 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Software Developer in Nashville - Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="portfolio.css">
-    <link rel="shortcut icon" href="TreesLogo.png"/>
-</head>P
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Software Developer in Nashville - Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/portfolio.css">
+  <link rel="shortcut icon" href="/images/TreesLogo.png" />
+</head>
 
 <body>
-    <header>
-        <h1>Kate Rebekah</h1>
-        <h2>Full-stack development & design in Nashville</h2>
-    </header>
-    <!-- These are the home navigation buttons -->
-    <section id="home">
-        <ul>
-            <li class="buttons developer">software developer</li>
-            <li class="buttons designer">web and graphic designer</li>
-            <li class="buttons archivist">archivist/librarian</li>
-            <li class="buttons contact">contact me</li>
-        </ul>
-    </section>
-    <!-- Each of the following IDs is only visible when the corresponding button is selected -->
-    <div class="invisibleSections">
-        <div class="devSection">
-            <div class="portfolio">
-                <img src="GWC.jpg" alt="" />
-                <p>Insert project here</p>
-            </div>
-            <div class="portfolio">
-                <img src="GWC.jpg" alt="" />
-                <p>Insert project here</p>
-            </div>
-            <div class="portfolio">
-                <img src="GWC.jpg" alt="" />
-                <p>Insert project here</p>
-            </div>
-        </div>
-        <div class="desSection">
-            <div class="portfolio">
-                <img src="EduOut.jpg">
-                <p>TSLA Education Outreach</p>
-            </div>
-            <div class="portfolio">
-                <img src="GWC.jpg">
-                <p>Great War Commission (in progress)</p>
-            </div>
-            <div class="portfolio">
-                <img src="JMaj.jpg">
-                <p>Johnny Majors, Tennessee Football Legend</p>
-            </div>
-        </div>
-        <div class="arcSection">
-            <div class="halfBox">
-                <h2>Library Science and Data Management</h2>
-                <h3>Graduate Certificate in Archives Studies</h3>
-                <p>Management of records in a hybrid (i.e. electronic and paper) environment; Record-keeping systems; Collections development and management; Access, reference and outreach functions</p>
-            </div>
-            <div class="halfBox">
-                <h2>Exhibitions and Project Management</h2>
-                <div class="portfolio">
-                    <img src="GWC.jpg" alt="" />
-                    <p>Exhibits Program</p>
-                </div>
-                <div class="portfolio">
-                    <img src="GWC.jpg" alt="" />
-                    <p>Online Exhibits</p>
-                </div>
-                <div class="portfolio">
-                    <img src="GWC.jpg" alt="" />
-                    <p>Traveling Exhibits</p>
-                </div>
-            </div>
-        </div>
-        <div class="conSection">
-            <h3>Resume doc | pdf  -  <a href="mailto:katerebekah@gmail.com">Email</a></h3>
-            <form action="form.html" method="POST">
-                <fieldset>
-                    <legend>Want to leave a comment?</legend>
-                    <label for="name" class="label">Name: </label>
-                    <input type="text" id="name" name="name" class="input">
-                    <br>
-                    <label for="email-address" class="label">Email Address: </label>
-                    <input type="text" id="email-address" name="emmail" class="input">
-                    <br>
-                    <label for="comments" class="label">Comments: </label>
-                    <textarea id="comments" name="comments" class="input"></textarea>
-                </fieldset>
-
-                <label for="feedback-type">What do you want to talk about?</label>
-                <select id="feedback-type" name="type">
-                    <option value="">Offer me a job (why, yes, I'm interested)</option>
-                    <option value="">Request Meeting</option>
-                    <option value="">Quick Question</option>
-                    <option value="">Other</option>
-                </select>
-
-                <fieldset>
-                    <legend>What do you do?</legend>
-                    <input type="radio" name="viewerBackground" value="Developer"> Developer
-                    <input type="radio" name="viewerBackground" value="Owner"> Business Owner
-                    <input type="radio" name="viewerBackground" value="Other"> Curious Bystander
-                </fieldset>
-
-                <button type="submit"> Submit </button>
-            </form>
-        </div>
+  <header>
+    <a href="index.html">
+      <h1>Kate Rebekah</h1>
+      <h2>Full-stack development & design in Nashville</h2>
+    </a>
+  </header>
+  <!-- These are the home navigation buttons -->
+  <section id="home">
+    <ul>
+      <li class="buttons developer">software developer</li>
+      <li class="buttons designer">web and graphic designer</li>
+      <li class="buttons archivist">archivist/librarian</li>
+      <li class="buttons contact">contact me</li>
+    </ul>
+  </section>
+  <!-- Each of the following IDs is only visible when the corresponding button is selected -->
+  <div class="invisibleSections">
+    <div class="devSection">
+      <div class="portfolio">
+        <a href="knockout.html">
+          <img src="/images/knockout.png" alt="Simple Account Ledger" />
+          <p>Account Ledger</p>
+        </a>
+      </div>
+      <div class="portfolio">
+        <a href="http://github.com/katerebekah/newApp">
+          <img src="/images/movieSecret.png" alt="Node CRUD app with API Integration" />
+          <p>Movie Secret</p>
+        </a>
+      </div>
+      <div class="portfolio">
+        <a href="http://github.com/katerebekah/spaceData">
+          <img src="/images/GWC.jpg" alt="In Progress" />
+          <p>SpaceData</p>
+        </a>
+      </div>
     </div>
-    <footer>The weather in Nashville is <span class="weatherNashville"></span> and <span class="tempNashville"></span> degrees. <img src="wundergroundLogo.png" height="30px;">
-    </footer>
-    <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="portfolio.js"></script>
+    <div class="desSection">
+      <div class="portfolio">
+        <a href="http://tnmap.tn.gov/civilwar/freedmen/">
+          <img src="/images/landscape.png">
+          <p>Landscape of Liberation</p>
+        </a>
+      </div>
+      <div class="portfolio">
+        <a href="http://www.tn.gov/tsla/exhibits/majors/exhibit_majors.htm">
+          <img src="/images/majors.png">
+          <p>Johnny Majors Online Exhibit</p>
+        </a>
+      </div>
+      <div class="portfolio">
+        <a href="design.html">
+          <img src="/images/design.png">
+          <p>Graphic Design Portfolio</p>
+        </a>
+      </div>
+    </div>
+    <div class="arcSection">
+      <div class="whiteBox">
+        <h2>Library Science and Data Management</h2>
+        <h3>Graduate Certificate in Archives Studies</h3>
+        <p>Management of records in a hybrid (i.e. electronic and paper) environment; Record-keeping systems; Collections development and management; Access, reference and outreach functions</p>
+        <h2>Exhibitions and Project Management</h2>
+        <h3>Example Exhibit</h3>
+        <p>Research, writing, editing; Scanning, digitization; Graphic design, Photoshop, Illustrator, InDesign</p>
+        <img src="/images/Exhibit1.png" alt="Exhibit 1">
+        <img src="/images/Exhibit2.png" alt="Exhibit 2">
+        <img src="/images/Exhibit3.png" alt="Exhibit 3">
+        <img src="/images/Exhibit4.png" alt="Exhibit 4">
+        <p>Courtesy of the Tennessee State Library and Archives</p>
+      </div>
+    </div>
+    <div class="conSection">
+      <img class="profilePic" src="/images/kate.jpg" alt="kate williams">
+      <h3><a href="mailto:katerebekah@gmail.com">Email for Resume/Reference</a></h3>
+      <h3><a href="http://github.com/katerebekah">GitHub</a> | <a href="http://www.linkedin.com/pub/kate-williams/b2/84/975">LinkedIn</a></h3>
+      <!-- <form action="form.html" method="POST">
+        <fieldset>
+          <legend>Want to leave a comment?</legend>
+          <label for="name" class="label">Name: </label>
+          <input type="text" id="name" name="name" class="input">
+          <br>
+          <label for="email-address" class="label">Email Address: </label>
+          <input type="text" id="email-address" name="emmail" class="input">
+          <br>
+          <label for="comments" class="label">Comments: </label>
+          <textarea id="comments" name="comments" class="input"></textarea>
+        </fieldset>
+        <label for="feedback-type">What do you want to talk about?</label>
+        <select id="feedback-type" name="type">
+          <option value="">Offer me a job (why, yes, I'm interested)</option>
+          <option value="">Request Meeting</option>
+          <option value="">Quick Question</option>
+          <option value="">Other</option>
+        </select>
+        <fieldset>
+          <legend>What do you do?</legend>
+          <input type="radio" name="viewerBackground" value="Developer"> Developer
+          <input type="radio" name="viewerBackground" value="Owner"> Business Owner
+          <input type="radio" name="viewerBackground" value="Other"> Curious Bystander
+        </fieldset>
+        <button type="submit"> Submit </button>
+      </form>-->
+    </div>
+  </div>
+  <footer>The weather in Nashville is <span class="weatherNashville"></span> and <span class="tempNashville"></span> degrees. <img src="/images/wundergroundLogo.png" height="30px;">
+  </footer>
+  <script type="text/javascript" src="/js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="/js/portfolio.js"></script>
 </body>
 
 </html>
